@@ -26,7 +26,7 @@ rand_xorshift = ">=0.2"
 itertools = ">=0.8"
 lz4 = "*"
 fastq = "^0.6"
-bio = ">=0.33.0, <2"
+bio = { git = "https://github.com/luiz10x/rust-bio.git", branch = "lirber/features", default-features = false, features = ["alignment", "io", "pattern_matching"] }
 thiserror = "1"
 
 [dev-dependencies]
